@@ -170,9 +170,9 @@ public class sli_search extends Set{
 		  
 		  
 		  
-		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
+		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
 		  Thread.sleep(2000); 
-		  String text4=search_1.getText(); 
+		  String text4=search_3.getText(); 
 		  System.out.println(text4); 
 		  Thread.sleep(3000);
 		  
