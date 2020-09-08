@@ -89,6 +89,115 @@ public class sli_search extends Set{
 		  download_ppt.click(); 
 		   Thread.sleep(5000);
 		  
+		{ for(int i=0; i<=23; i++) {
+
+                  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_btn.sendKeys("HR"); 
+		  Thread.sleep(4000);
+		  
+		  
+		  
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
+		  Thread.sleep(2000); 
+		  String text1=search_1.getText(); 
+		  System.out.println(text1); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text1="Product Suggestions for Hr Interview ";
+		  
+		  if(text1.equalsIgnoreCase(actual_text1)) {
+		  log.info("product suggestion tab header is displayed correctly "); }
+		  
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_loc=prod_sugg.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
+		  
+		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_product);
+		  
+		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  Thread.sleep(1000); 
+		  child1_product.click();
+		  Thread.sleep(4000);
+		  
+	           }
+		
+                  for(int i=0; i<=24; i++) {
+
+                  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_btn.sendKeys("Management"); 
+		  Thread.sleep(4000);
+		  
+		  
+		  
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
+		  Thread.sleep(2000); 
+		  String text1=search_1.getText(); 
+		  System.out.println(text1); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text1="Product Suggestions for Management ";
+		  
+		  if(text1.equalsIgnoreCase(actual_text1)) {
+		  log.info("product suggestion tab header is displayed correctly "); }
+		  
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_loc=prod_sugg.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
+		  
+		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_product);
+		  
+		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  Thread.sleep(1000); 
+		  child1_product.click();
+		  Thread.sleep(4000);
+		  
+	            }
+		
+                 for(int i=0; i<=24; i++) {
+
+                  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_btn.sendKeys("org chart"); 
+		  Thread.sleep(4000);
+		  
+		  
+		  
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
+		  Thread.sleep(2000); 
+		  String text1=search_1.getText(); 
+		  System.out.println(text1); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text1="Product Suggestions for org chart ";
+		  
+		  if(text1.equalsIgnoreCase(actual_text1)) {
+		  log.info("product suggestion tab header is displayed correctly "); }
+		  
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_loc=prod_sugg.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
+		  
+		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_product);
+		  
+		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  Thread.sleep(1000); 
+		  child1_product.click();
+		  Thread.sleep(4000);
+		  
+	    }
+		
+		}
 		  driver.navigate().refresh(); Thread.sleep(3800);
 		  
 		/* WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[2]/div/input")));
