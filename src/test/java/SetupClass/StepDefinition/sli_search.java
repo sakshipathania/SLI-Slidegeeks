@@ -70,7 +70,7 @@ public class sli_search extends Set{
 		  String actual_text1="Product Suggestions for Hr Interview ";
 		  
 		  if(text1.equalsIgnoreCase(actual_text1)) {
-		  log.info("product suggestion tab header is displayed correctly "); }
+		  log.info("product suggestion tab header is displayed correctly "); 
 		  
 		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_product_list"))); 
 		  Thread.sleep(2000); 
