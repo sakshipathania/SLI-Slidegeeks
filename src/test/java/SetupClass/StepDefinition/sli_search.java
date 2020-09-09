@@ -71,6 +71,7 @@ public class sli_search extends Set{
 		  
 		  if(text1.equalsIgnoreCase(actual_text1)) {
 		  log.info("product suggestion tab header is displayed correctly "); 
+		  }
 		  
 		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_product_list"))); 
 		  Thread.sleep(2000); 
@@ -80,6 +81,7 @@ public class sli_search extends Set{
 		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_product);
+		  
 		  
 		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
 		  Thread.sleep(1000); 
@@ -238,7 +240,8 @@ public class sli_search extends Set{
 		
 	}
 	
-
+	
+}
 
 	
 }
