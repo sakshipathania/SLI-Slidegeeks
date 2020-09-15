@@ -96,7 +96,7 @@ public class sli_search extends Set{
 	           } */
 	
 		
-                  for(int i=0; i<=24; i++) {
+                 /* for(int i=0; i<=24; i++) {
 
                   WebElement search_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
 		  Thread.sleep(2000);
