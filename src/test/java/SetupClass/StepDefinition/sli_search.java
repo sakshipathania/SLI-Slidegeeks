@@ -61,7 +61,7 @@ public class sli_search extends Set{
 		  
 		  
 		  
-		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_ac_section"))); 
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String text1=search_1.getText(); 
 		  System.out.println(text1); 
@@ -73,7 +73,7 @@ public class sli_search extends Set{
 		  log.info("product suggestion tab header is displayed correctly "); 
 		  }
 		  
-		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_product_list"))); 
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_loc=prod_sugg.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
@@ -105,7 +105,7 @@ public class sli_search extends Set{
 		  
 		  
 		  
-		  WebElement search_2 =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_ac_section"))); 
+		  WebElement search_2 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String text3=search_2.getText(); 
 		  System.out.println(text3); 
@@ -141,7 +141,7 @@ public class sli_search extends Set{
 		  
 		  
 		  
-		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_ac_section"))); 
+		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String text4=search_3.getText(); 
 		  System.out.println(text4); 
@@ -152,7 +152,7 @@ public class sli_search extends Set{
 		  if(text4.equalsIgnoreCase(actual_text1)) {
 		  log.info("product suggestion tab header is displayed correctly "); }
 		  
-		  WebElement prod_sugg4 =wait.until(ExpectedConditions.elementToBeClickable(By.class("sli_product_list"))); 
+		  WebElement prod_sugg4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_loc4=prod_sugg.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc4);
