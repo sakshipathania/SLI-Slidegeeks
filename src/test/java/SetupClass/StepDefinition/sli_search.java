@@ -118,7 +118,7 @@ public class sli_search extends Set{
 		  
 		  WebElement prod_sugg3 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
 		  Thread.sleep(2000); 
-		  String pro_sugg_loc3=prod_sugg.getText();
+		  String pro_sugg_loc3 =prod_sugg3.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc3);
 		  
 		  WebElement parent_product4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
@@ -149,12 +149,12 @@ public class sli_search extends Set{
 		  
 		  String actual_text4="Product Suggestions for org chart ";
 		  
-		  if(text4.equalsIgnoreCase(actual_text1)) {
+		  if(text4.equalsIgnoreCase(actual_text4)) {
 		  log.info("product suggestion tab header is displayed correctly "); }
 		  
 		  WebElement prod_sugg4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
 		  Thread.sleep(2000); 
-		  String pro_sugg_loc4=prod_sugg.getText();
+		  String pro_sugg_loc4=prod_sugg4.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc4);
 		  
 		  WebElement parent_product5 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
