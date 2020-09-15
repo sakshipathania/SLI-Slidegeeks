@@ -52,7 +52,7 @@ public class sli_search extends Set{
 	@Then("^enter a keyword to search\\.$")
 	public void enter_a_keyword_to_search() throws Throwable {
 		
-		/* for(int i=0; i<=23; i++) {
+		 for(int i=0; i<=23; i++) {
 
 		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
 		  Thread.sleep(2000);
@@ -93,10 +93,10 @@ public class sli_search extends Set{
 		  download_ppt.click(); 
 		   Thread.sleep(5000);
 		 
-	           } */
+	           } 
 	
 		
-                 /* for(int i=0; i<=24; i++) {
+                 for(int i=0; i<=24; i++) {
 
                   WebElement search_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
 		  Thread.sleep(2000);
