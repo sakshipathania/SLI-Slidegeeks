@@ -88,10 +88,10 @@ public class sli_search extends Set{
 		  child1_product.click();
 		  Thread.sleep(4000);
 		  
-		  WebElement download_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit'][contains(.,'Download this presentation')]"))); 
+		 /* WebElement download_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit'][contains(.,'Download this presentation')]"))); 
 		  Thread.sleep(8000); 
 		  download_ppt.click(); 
-		   Thread.sleep(5000);
+		   Thread.sleep(5000); */
 		 
 	           } 
 	
