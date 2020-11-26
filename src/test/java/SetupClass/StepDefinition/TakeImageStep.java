@@ -7,6 +7,7 @@ import SetupClass.Set;
 import cucumber.api.java.en.Given;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.After;
 
 
 	public class TakeImageStep extends Set {
