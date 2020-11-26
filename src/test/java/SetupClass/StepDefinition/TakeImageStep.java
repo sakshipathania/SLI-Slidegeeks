@@ -1,11 +1,11 @@
-package SetupClass.TestStep;
+package SetupClass.StepDefinition;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import SetupClass.Set;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 
 
 	public class TakeImageStep extends Set {
