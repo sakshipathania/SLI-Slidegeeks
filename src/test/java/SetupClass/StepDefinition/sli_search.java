@@ -189,7 +189,7 @@ public class sli_search extends Set{
 		  driver.navigate().refresh(); 
 		  Thread.sleep(3800); */
 		 
-		driver.get("https://www.slidegeeks.com");
+		/*driver.get("https://www.slidegeeks.com");
 		
 		Thread.sleep(5400);
 		
@@ -208,7 +208,7 @@ public class sli_search extends Set{
 		 Thread.sleep(2000); 
 		 g_search.click();
 		 Thread.sleep(6300);
-		 
+		 */
 		 
 		/* WebElement geek_download_1 =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[contains(.,'Download this Presentation')])[2]"))); 
 		 Thread.sleep(500);
