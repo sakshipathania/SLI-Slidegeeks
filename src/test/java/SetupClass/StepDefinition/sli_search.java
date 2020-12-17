@@ -61,7 +61,7 @@ public class sli_search extends Set{
 			 
 		  WebElement search_0 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
-		  String text1=search_0.getText(); 
+		  String text0=search_0.getText(); 
 		  System.out.println(text0); 
 		  Thread.sleep(3000);
 		  
