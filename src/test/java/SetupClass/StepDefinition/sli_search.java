@@ -58,6 +58,7 @@ public class sli_search extends Set{
 		  Thread.sleep(2000);
 		  search_bar.sendKeys("HR"); 
 		  Thread.sleep(4000);	
+	           search_bar.clear(); 
 			 
 		  WebElement search_0 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
@@ -82,9 +83,9 @@ public class sli_search extends Set{
 	          
 			 Thread.sleep(4000);
 			 
-		WebElement search_bar1 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		/*WebElement search_bar1 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
 		  Thread.sleep(2000);
-		  search_bar1.clear(); 
+		  search_bar1.clear(); */
 			 
 		 }
 		
