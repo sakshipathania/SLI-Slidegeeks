@@ -52,6 +52,42 @@ public class sli_search extends Set{
 	@Then("^enter a keyword to search\\.$")
 	public void enter_a_keyword_to_search() throws Throwable {
 		
+		 for(int i=0; i<=4; i++) {
+			 
+		  WebElement search_bar = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_bar.sendKeys("HR"); 
+		  Thread.sleep(4000);	
+			 
+		  WebElement search_0 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  Thread.sleep(2000); 
+		  String text1=search_0.getText(); 
+		  System.out.println(text0); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text0="Product Suggestions for Hr Interview ";
+		  
+		  if(text0.equalsIgnoreCase(actual_text0)) {
+		  log.info("product suggestion tab header is displayed correctly "); 
+		  }
+		  
+		  WebElement prod_sugg0 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_loc0=prod_sugg0.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_loc0);
+		  
+		  WebElement parent_product0 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_product0);
+	          
+			 Thread.sleep(4000);
+			 
+		WebElement search_bar1 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_bar1.clear(); 
+			 
+		 }
+		
 		 for(int i=0; i<=24; i++) {
 
 		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
