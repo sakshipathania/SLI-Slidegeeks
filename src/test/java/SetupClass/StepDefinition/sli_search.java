@@ -218,8 +218,69 @@ public class sli_search extends Set{
 		  
 	    }
 		
-		
 		  driver.navigate().refresh(); Thread.sleep(3800);
+		
+		@Then("^Click on Sort//.$")
+	        public void Click_on_Sort() throws Throwable {
+			Thread.sleep(4000);
+		 WebElement search_btnn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_btnn.sendKeys("HR"); 
+		  Thread.sleep(4000);
+		  
+		  
+		  
+		  WebElement search_1n =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  Thread.sleep(2000); 
+		  String text00=search_1n.getText(); 
+		  System.out.println(text00); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text00="Product Suggestions for Hr Interview ";
+		  
+		  if(text00.equalsIgnoreCase(actual_text00)) {
+		  log.info("product suggestion tab header is displayed correctly "); 
+		  }
+		  
+		  WebElement prod_suggn =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_locn=prod_suggn.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_locn);
+		  
+		  WebElement parent_productn =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_productn);
+		   
+		Thread.sleep(4000);
+		  WebElement View_More = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sli_autocomplete > div > div.sli_ac_products > div > div.sli_view_more_link_wrapper > a"))); 
+			Thread.sleep(3000);
+			View_More.click();
+			Thread.sleep(5000);
+			
+			Thread.sleep(3000);
+			
+		WebElement Sort= driver.findElement(By.cssSelector("#dk0-combobox"));
+		Thread.sleep(3000);
+		Sort.click();
+			
+		WebElement Newest = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#dk0-https/:////www/.slideteam/.net//search//go/?lbc/=slideteam/&method/=and/&p/=Q/&ts/=custom/&uid/=516718103/&w/=hr/%20annual/%20report/&isort/=newest"))); 
+			Thread.sleep(3000);
+	         Newest.click();
+			
+		Thread.sleep(3000);
+			
+			WebElement Sort1 = driver.findElement(By.cssSelector("#dk0-combobox"));
+		Thread.sleep(3000);
+		Sort1.click();
+		Thread.sleep(3000);
+			
+		WebElement Popularity = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#dk0-https/:////www/.slideteam/.net//search//go/?lbc/=slideteam/&method/=and/&p/=Q/&ts/=custom/&uid/=516718103/&w/=hr/%20annual/%20report"))); 
+			Thread.sleep(3000);
+	         Popularity.click();
+			
+		Thread.sleep(3000);	
+			
+		}
 		  
 		/* WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[2]/div/input")));
     old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
