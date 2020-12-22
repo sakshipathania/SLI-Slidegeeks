@@ -217,7 +217,7 @@ public class sli_search extends Set{
 		  Thread.sleep(4000);
 		  
 	    }
-		
+	}
 		  driver.navigate().refresh(); Thread.sleep(3800);
 		
 		@Then("^Click on Sort//.$")
@@ -348,6 +348,6 @@ public class sli_search extends Set{
 		js.executeScript("arguments[0].scrollIntoView();",geek_download_12);
 		 geek_download_12.click();
 		 Thread.sleep(5000); */
-	}
+	
 	
 }
