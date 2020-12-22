@@ -137,11 +137,7 @@ public class sli_search extends Set{
 		  Thread.sleep(1000); 
 		  child1_product.click();
 		  Thread.sleep(4000);
-		  
-		 /* WebElement download_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit'][contains(.,'Download this presentation')]"))); 
-		  Thread.sleep(8000); 
-		  download_ppt.click(); 
-		   Thread.sleep(5000); */
+		 
 		 
 	           } 
 	
@@ -152,8 +148,6 @@ public class sli_search extends Set{
 		  Thread.sleep(2000);
 		  search_btn2.sendKeys("Management"); 
 		  Thread.sleep(4000);
-		  
-		  
 		  
 		  WebElement search_2 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
@@ -189,8 +183,6 @@ public class sli_search extends Set{
 		  search_btn3.sendKeys("org chart"); 
 		  Thread.sleep(4000);
 		  
-		  
-		  
 		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String text4=search_3.getText(); 
@@ -217,8 +209,9 @@ public class sli_search extends Set{
 		  Thread.sleep(4000);
 		  
 	    }
-	}
+	
 		  driver.navigate().refresh(); Thread.sleep(3800);
+	}
 		
 		@Then("^Click on Sort//.$")
 	        public void Click_on_Sort() throws Throwable {
@@ -348,6 +341,6 @@ public class sli_search extends Set{
 		js.executeScript("arguments[0].scrollIntoView();",geek_download_12);
 		 geek_download_12.click();
 		 Thread.sleep(5000); */
-}
+
 	
 }
