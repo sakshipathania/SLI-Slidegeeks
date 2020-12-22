@@ -22,8 +22,8 @@ public class Search_Filter extends Set{
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
 
 
-	@Given("^Open the website URL\\.$")
-	public void open_the_website_URL() throws Throwable {
+	@Given("^Open the website URL1\\.$")
+	public void open_the_website_URL1() throws Throwable {
 		driver.get(AppURL);
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
