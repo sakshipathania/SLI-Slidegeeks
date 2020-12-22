@@ -189,6 +189,19 @@ public class Search_Filter extends Set{
 		 System.out.println("Total Number of Products ----"+str);
 		Thread.sleep(3000);
 				driver.navigate().refresh(); Thread.sleep(3800);
+		
+		try {
+			WebElement logout = driver.findElement(By.xpath("//a[contains(text(),'Sign Out')]"));
+			if (logout.isEnabled()) {
+				Thread.sleep(1000);
+				logout.click();
+				Thread.sleep(8000);
+				driver.navigate().refresh();
+				Thread.sleep(2000);
+			}
+		} catch (NoSuchElementException Ext) {
+
+		}
 		}
 		}
 		
