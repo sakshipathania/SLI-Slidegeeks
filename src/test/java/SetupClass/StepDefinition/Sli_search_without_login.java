@@ -14,14 +14,14 @@ import SetupClass.Set;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class sli_search extends Set{
+public class Sli_search_without_login extends Set{
 	
 	WebDriverWait wait = new WebDriverWait(driver,50);
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
 
 
-	@Given("^Open the website URL\\.$")
-	public void open_the_website_URL() throws Throwable {
+	@Given("^Open the website URL3\\.$")
+	public void open_the_website_URL3() throws Throwable {
 		driver.get(AppURL);
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
@@ -50,8 +50,8 @@ public class sli_search extends Set{
 
 	}
 
-	@Then("^enter a keyword to search\\.$")
-	public void enter_a_keyword_to_search() throws Throwable {
+	@Then("^enter a keyword to search3\\.$")
+	public void enter_a_keyword_to_search3() throws Throwable {
 		
 		for(int i=0; i<=4; i++) {
 	
