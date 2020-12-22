@@ -52,6 +52,54 @@ public class sli_search extends Set{
 	@Then("^enter a keyword to search\\.$")
 	public void enter_a_keyword_to_search() throws Throwable {
 		
+		for(int i=0; i<=4; i++) {
+	
+		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  Thread.sleep(2000);
+		  search_btn.sendKeys("Org Chart"); 
+		  Thread.sleep(4000);
+		  
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_ac_section_products"))); 
+		  Thread.sleep(2000); 
+		  String text1=search_1.getText(); 
+		  System.out.println(text1); 
+		  Thread.sleep(3000);
+		  
+		  String actual_text1="Product Suggestions for Hr Interview ";
+		  
+		  if(text1.equalsIgnoreCase(actual_text1)) {
+		  log.info("product suggestion tab header is displayed correctly "); }
+		  
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
+		  Thread.sleep(2000); 
+		  String pro_sugg_loc=prod_sugg.getText();
+		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
+		  
+		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  Thread.sleep(2000);
+		  System.out.println("classname  of parent is ----------------------->"+parent_product);
+		
+		  Thread.sleep(4000);
+	
+		  WebElement search_btn1 = driver.findElement(By.cssSelector("#search"));
+		  Thread.sleep(2000);
+		  search_btn1.sendKeys(Keys.CONTROL + "a");
+                  search_btn1.sendKeys(Keys.DELETE);
+		  Thread.sleep(8000);
+		
+		
+		if(driver.findElement(By.id("sli_raclist_products")).isDisplayed()){
+			
+                    System.out.println("Element is Visible");
+			throw new IOException ("Element Should not be visible");
+			
+                        }  else {
+                            System.out.println("Element is Not Visible");
+			js.executeScript("alert('Product Suggestion Box did not appeared after Keyword Removal');");
+                             }
+		driver.navigate().refresh(); Thread.sleep(3800);
+
+	                }
 		
 		 for(int i=0; i<=24; i++) {
 
