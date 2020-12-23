@@ -268,6 +268,7 @@ public class sli_search extends Set{
 		
 		
 		WebElement Sort= driver.findElement(By.cssSelector("#dk0-combobox"));
+		js.executeScript("arguments[0].scrollIntoView();",Sort);
 		Thread.sleep(3000);
 		Sort.click();
 		
@@ -279,6 +280,7 @@ public class sli_search extends Set{
 					  
 	
 	      WebElement Sort1 = driver.findElement(By.cssSelector("#dk0-combobox"));
+		js.executeScript("arguments[0].scrollIntoView();",Sort1);
 		Thread.sleep(3000);
 		Sort1.click();
 		
@@ -289,6 +291,7 @@ public class sli_search extends Set{
 			Thread.sleep(3000);	
 		
 		 WebElement Sort2 = driver.findElement(By.cssSelector("#dk0-combobox"));
+		js.executeScript("arguments[0].scrollIntoView();",Sort2);
 		Thread.sleep(3000);
 		Sort2.click();
 		
@@ -304,7 +307,7 @@ public class sli_search extends Set{
 			Thread.sleep(3000);
 		
 		WebElement Category = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-cat1 > li:nth-child(2) > a")));
-		
+		js.executeScript("arguments[0].scrollIntoView();",Category);
 			Thread.sleep(3000);
 	                 Category.click();
 			Thread.sleep(3000);
