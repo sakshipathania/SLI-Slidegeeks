@@ -257,7 +257,7 @@ public class sli_search extends Set{
 		
 		
 		
-		WebElement Sort= driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
+		WebElement Sort= driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort);
 		Thread.sleep(3000);
 		Sort.click();
@@ -269,7 +269,7 @@ public class sli_search extends Set{
 					
 					  
 	
-	      WebElement Sort1 = driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
+	      WebElement Sort1 = driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort1);
 		Thread.sleep(3000);
 		Sort1.click();
@@ -280,7 +280,7 @@ public class sli_search extends Set{
 	         Popularity.click();
 			Thread.sleep(3000);	
 		
-		 WebElement Sort2 = driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
+		 WebElement Sort2 = driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort2);
 		Thread.sleep(3000);
 		Sort2.click();
@@ -309,72 +309,6 @@ public class sli_search extends Set{
 		
 	}
 		  
-		/* WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[2]/div/input")));
-    old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
-    
-    WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[3]/div/input")));
-    old_paid_pass.sendKeys("Qwerty@1");
 		
-		 WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
-	    old_paid_login_btn.click();
-		  
-		  
-		  WebElement download_ppt1 =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit'][contains(.,'Download this presentation')]"))); 
-		  Thread.sleep(2000); 
-		  download_ppt1.click(); 
-		  Thread.sleep(2000);
-		  
-		  driver.navigate().refresh(); 
-		  Thread.sleep(3800); */
-		 
-		/*driver.get("https://www.slidegeeks.com");
-		
-		Thread.sleep(5400);
-		
-		WebElement gk_search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
-		Thread.sleep(2000);
-		gk_search_btn.sendKeys("hr");
-		Thread.sleep(4000);
-		
-		 WebElement g_search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sli_autocomplete > div > div.sli_ac_products > h4"))); 
-		 Thread.sleep(2000); 
-		 String g_text1=g_search_1.getText(); 
-		 System.out.println(g_text1); 
-		 Thread.sleep(3000);
-		 
-		 WebElement g_search =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
-		 Thread.sleep(2000); 
-		 g_search.click();
-		 Thread.sleep(6300);
-		 */
-		 
-		/* WebElement geek_download_1 =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[contains(.,'Download this Presentation')])[2]"))); 
-		 Thread.sleep(500);
-		js.executeScript("arguments[0].scrollIntoView();",geek_download_1);
-		 geek_download_1.click();
-		 Thread.sleep(5000);
-		 
-		 WebElement login_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-login-form-username > input:nth-child(1)")));
-		 Thread.sleep(3000);
-		 login_email.sendKeys("himanshi.sharma+pgeeks@slidetech.in");
-		 Thread.sleep(3000);
-		 
-		 WebElement login_password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span.pg-login-form-password > input:nth-child(1)")));
-		 Thread.sleep(3000);
-		login_password.sendKeys("123456");
-		 Thread.sleep(3000);
-		 
-		 WebElement login_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-button-login")));
-		 Thread.sleep(3000);
-		 login_btn.click();
-		 Thread.sleep(3000);
-		 
-		 
-		 WebElement geek_download_12 =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[contains(.,'Download this Presentation')])[2]"))); 
-		 Thread.sleep(5000);
-		js.executeScript("arguments[0].scrollIntoView();",geek_download_12);
-		 geek_download_12.click();
-		 Thread.sleep(5000); */
-
 	
 }
