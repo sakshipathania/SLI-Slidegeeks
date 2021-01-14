@@ -23,24 +23,11 @@ public class sli_search extends Set{
 	@Given("^Open the website URL\\.$")
 	public void open_the_website_URL() throws Throwable {
 		driver.get(AppURL);
-	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-	log.info("It's opening the website URL");
-	Thread.sleep(1000);
-	//driver.get("https://www.slideteam.net");
-	//Thread.sleep(2000);
-	//driver.get("https://www.slideteam.net");
-	//Thread.sleep(2000);
-    driver.manage().deleteAllCookies();
-    Thread.sleep(2000);
-	try {
-		driver.findElement(By.cssSelector(".authorization-link > a:nth-child(1)")).click();
-		Thread.sleep(2000);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
-	} 
-	catch (NoSuchElementException popup) {
-	}
+		Thread.sleep(1000);
 		
-		driver.get("body > div.afterBody.signin-page-wrapper.main-wrapper > header > div > div > nav > div > div.rgth_sechedr > div.navigation_wrapper > div.social_right > div > div.contact.login-option > ul > li:nth-child(1) > a");
+		driver.get("https://www.slidegeeks.com/account");
 		Thread.sleep(3000);
 			WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(2) > div > form > div:nth-child(1) > input")));
     old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
