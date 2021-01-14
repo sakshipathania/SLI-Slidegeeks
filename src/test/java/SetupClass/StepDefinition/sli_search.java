@@ -26,10 +26,10 @@ public class sli_search extends Set{
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
 	Thread.sleep(1000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
     driver.manage().deleteAllCookies();
     Thread.sleep(2000);
 	try {
