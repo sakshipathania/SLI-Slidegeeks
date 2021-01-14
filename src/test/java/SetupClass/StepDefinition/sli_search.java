@@ -39,13 +39,13 @@ public class sli_search extends Set{
 	} 
 	catch (NoSuchElementException popup) {
 	}
-			WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[2]/div/input")));
+			WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(2) > div > form > div:nth-child(1) > input")));
     old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
     
-    WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[3]/div/input")));
+    WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(2) > div > form > div:nth-child(2) > input")));
     old_paid_pass.sendKeys("Qwerty@1");
 		
-		 WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
+		 WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(2) > div > form > div.btn-wrapper.login_btn > input")));
 	    old_paid_login_btn.click();
 
 	}
