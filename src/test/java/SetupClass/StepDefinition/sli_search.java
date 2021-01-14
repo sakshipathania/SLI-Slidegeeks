@@ -290,7 +290,7 @@ public class sli_search extends Set{
 	         Most_downloaded.click();
 			Thread.sleep(3000);
 		
-		WebElement Category = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-cat1 > li:nth-child(2)")));
+		WebElement Category = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[3]/div/section[2]/div[2]/span/div[1]/ul/li[1]/a")));
 		
 			Thread.sleep(3000);
 	                 Category.click();
@@ -302,7 +302,7 @@ public class sli_search extends Set{
 	                 Stage.click();
 			Thread.sleep(3000);
 		
-		String str = driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.left-col.sli_generic_container > div > div > span.sli_result_set_after_prefix")).getText();
+		String str = driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.left-col.sli_generic_container > div > div")).getText();
 		 System.out.println("Total Number of Products ----"+str);
 		Thread.sleep(3000);
 				driver.navigate().refresh(); Thread.sleep(3800);
