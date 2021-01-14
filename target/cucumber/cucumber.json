@@ -30,7 +30,17 @@
             "line": 6,
             "name": "enter a keyword to search.",
             "match": {
-              "location": "sli_search.enter_a_keyword_to_search()"
+              "location": "enter a keyword to search()"
+            },
+          {
+            "result": {
+              "duration": 118034979300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter a keyword to search and filter.",
+            "match": {
+              "location": "enter a keyword to search and filter()"
             },
             "keyword": "Then "
           }
