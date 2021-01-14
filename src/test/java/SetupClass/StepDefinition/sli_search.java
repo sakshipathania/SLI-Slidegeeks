@@ -94,14 +94,14 @@ public class sli_search extends Set{
 		
 		 for(int i=0; i<=24; i++) {
 
-		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn.sendKeys("HR"); 
 		  Thread.sleep(4000);
 		  
 		  
 		  
-		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_products"))); 
 		  Thread.sleep(2000); 
 		  String text1=search_1.getText(); 
 		  System.out.println(text1); 
@@ -113,17 +113,17 @@ public class sli_search extends Set{
 		  log.info("product suggestion tab header is displayed correctly "); 
 		  }
 		  
-		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement prod_sugg =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_loc=prod_sugg.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc);
 		  
-		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement parent_product =wait.until(ExpectedConditions.elementToBeClickable(By.className("productList"))); 
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_product);
 		  
 		  
-		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_image"))); 
 		  Thread.sleep(1000); 
 		  child1_product.click();
 		  Thread.sleep(4000);
@@ -134,12 +134,12 @@ public class sli_search extends Set{
 		
                  for(int i=0; i<=24; i++) {
 
-                  WebElement search_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+                  WebElement search_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn2.sendKeys("Management"); 
 		  Thread.sleep(4000);
 		  
-		  WebElement search_2 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  WebElement search_2 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_products"))); 
 		  Thread.sleep(2000); 
 		  String text3=search_2.getText(); 
 		  System.out.println(text3); 
@@ -150,16 +150,16 @@ public class sli_search extends Set{
 		  if(text3.equalsIgnoreCase(actual_text3)) {
 		  log.info("product suggestion tab header is displayed correctly "); }
 		  
-		  WebElement prod_sugg3 =wait.until(ExpectedConditions.elementToBeClickable(By.id("sli_raclist_products"))); 
+		  WebElement prod_sugg3 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_loc3 =prod_sugg3.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc3);
 		  
-		  WebElement parent_product4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement parent_product4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("productList"))); 
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_product4);
 		  
-		  WebElement child1_product2 = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  WebElement child1_product2 = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_image"))); 
 		  Thread.sleep(1000); 
 		  child1_product2.click();
 		  Thread.sleep(4000);
@@ -168,12 +168,12 @@ public class sli_search extends Set{
 		
                  for(int i=0; i<=24; i++) {
 
-                  WebElement search_btn3 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+                  WebElement search_btn3 = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn3.sendKeys("org chart"); 
 		  Thread.sleep(4000);
 		  
-		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  WebElement search_3 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_products"))); 
 		  Thread.sleep(2000); 
 		  String text4=search_3.getText(); 
 		  System.out.println(text4); 
@@ -184,16 +184,16 @@ public class sli_search extends Set{
 		  if(text4.equalsIgnoreCase(actual_text4)) {
 		  log.info("product suggestion tab header is displayed correctly "); }
 		  
-		  WebElement prod_sugg4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement prod_sugg4 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_loc4=prod_sugg4.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_loc4);
 		  
-		  WebElement parent_product5 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement parent_product5 =wait.until(ExpectedConditions.elementToBeClickable(By.className("productList"))); 
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_product5);
 		  
-		  WebElement child1_product3 = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_product"))); 
+		  WebElement child1_product3 = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_image"))); 
 		  Thread.sleep(1000); 
 		  child1_product3.click();
 		  Thread.sleep(4000);
@@ -219,14 +219,14 @@ public class sli_search extends Set{
 	public void enter_a_keyword_to_search_and_filter() throws Throwable {
 		
 		Thread.sleep(4000);
-		 WebElement search_btnn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#search")));
+		 WebElement search_btnn = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btnn.sendKeys("HR"); 
 		  Thread.sleep(4000);
 		  
 		  
 		  
-		  WebElement search_1n =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
+		  WebElement search_1n =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_products"))); 
 		  Thread.sleep(2000); 
 		  String text00=search_1n.getText(); 
 		  System.out.println(text00); 
@@ -238,17 +238,17 @@ public class sli_search extends Set{
 		  log.info("product suggestion tab header is displayed correctly "); 
 		  }
 		  
-		  WebElement prod_suggn =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement prod_suggn =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_section"))); 
 		  Thread.sleep(2000); 
 		  String pro_sugg_locn=prod_suggn.getText();
 		  System.out.println("product suggestion list name is ----"+pro_sugg_locn);
 		  
-		  WebElement parent_productn =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_product_list"))); 
+		  WebElement parent_productn =wait.until(ExpectedConditions.elementToBeClickable(By.className("productList"))); 
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_productn);
 		   
 		Thread.sleep(4000);
-		  WebElement View_More = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sli_autocomplete > div > div.sli_ac_products > div > div.sli_view_more_link_wrapper > a"))); 
+		  WebElement View_More = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sli_autocomplete > div > div.sli_ac_products > div > div.view-more-link > a"))); 
 			Thread.sleep(3000);
 			View_More.click();
 			Thread.sleep(5000);
@@ -257,7 +257,7 @@ public class sli_search extends Set{
 		
 		
 		
-		WebElement Sort= driver.findElement(By.cssSelector("#dk0-combobox"));
+		WebElement Sort= driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort);
 		Thread.sleep(3000);
 		Sort.click();
@@ -269,7 +269,7 @@ public class sli_search extends Set{
 					
 					  
 	
-	      WebElement Sort1 = driver.findElement(By.cssSelector("#dk0-combobox"));
+	      WebElement Sort1 = driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort1);
 		Thread.sleep(3000);
 		Sort1.click();
@@ -280,7 +280,7 @@ public class sli_search extends Set{
 	         Popularity.click();
 			Thread.sleep(3000);	
 		
-		 WebElement Sort2 = driver.findElement(By.cssSelector("#dk0-combobox"));
+		 WebElement Sort2 = driver.findElement(By.cssSelector("#select2-select_pulaoty-fg-container"));
 		js.executeScript("arguments[0].scrollIntoView();",Sort2);
 		Thread.sleep(3000);
 		Sort2.click();
@@ -290,19 +290,19 @@ public class sli_search extends Set{
 	         Most_downloaded.click();
 			Thread.sleep(3000);
 		
-		WebElement Stage = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-stages > li:nth-child(2) > input[type=checkbox]")));
+		WebElement Category = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-cat1 > li:nth-child(2)")));
 		
-			Thread.sleep(3000);
-	                 Stage.click();
-			Thread.sleep(3000);
-		
-		WebElement Category = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-cat1 > li:nth-child(2) > a")));
-		js.executeScript("arguments[0].scrollIntoView();",Category);
 			Thread.sleep(3000);
 	                 Category.click();
 			Thread.sleep(3000);
 		
-		String str = driver.findElement(By.cssSelector("#sli_content_wrapper > div:nth-child(3) > div > div > div.toolbar-amount.sli_num_results > span.toolbar-number.sli_current_page_value")).getText();
+		WebElement Stage = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#facet-stages > li:nth-child(3) > input[type=checkbox]")));
+		js.executeScript("arguments[0].scrollIntoView();",Stage);
+			Thread.sleep(3000);
+	                 Stage.click();
+			Thread.sleep(3000);
+		
+		String str = driver.findElement(By.cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.left-col.sli_generic_container > div > div > span.sli_result_set_after_prefix")).getText();
 		 System.out.println("Total Number of Products ----"+str);
 		Thread.sleep(3000);
 				driver.navigate().refresh(); Thread.sleep(3800);
