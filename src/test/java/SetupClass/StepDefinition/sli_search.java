@@ -39,6 +39,9 @@ public class sli_search extends Set{
 	} 
 	catch (NoSuchElementException popup) {
 	}
+		
+		driver.get("body > div.afterBody.signin-page-wrapper.main-wrapper > header > div > div > nav > div > div.rgth_sechedr > div.navigation_wrapper > div.social_right > div > div.contact.login-option > ul > li:nth-child(1) > a");
+		Thread.sleep(3000);
 			WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(2) > div > form > div:nth-child(1) > input")));
     old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
     
