@@ -53,7 +53,7 @@ public class sli_search extends Set{
 		  WebElement search_1 =wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_products"))); 
 		  Thread.sleep(2000); 
 		  String text1=search_1.getText(); 
-		  System.out.println(text1); 
+		  System.out.println("text= "+text1); 
 		  Thread.sleep(3000);
 		  
 		  String actual_text1="Product Suggestions for Org Chart Interview ";
