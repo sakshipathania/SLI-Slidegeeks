@@ -44,9 +44,9 @@ public class sli_search extends Set{
 	public void enter_a_keyword_to_search() throws Throwable {
 		
 		for(int i=0; i<=4; i++) {
-	
+	           Thread.sleep(2000);
 		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
-		  Thread.sleep(2000);
+		  Thread.sleep(1000);
 		  search_btn.sendKeys("Org Chart"); 
 		  Thread.sleep(4000);
 		  
@@ -93,7 +93,7 @@ public class sli_search extends Set{
 	                }
 		
 		 for(int i=0; i<=24; i++) {
-
+                  Thread.sleep(2000);
 		  WebElement search_btn = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn.sendKeys("HR"); 
@@ -133,7 +133,7 @@ public class sli_search extends Set{
 	
 		
                  for(int i=0; i<=24; i++) {
-
+                 Thread.sleep(2000);
                   WebElement search_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn2.sendKeys("Management"); 
@@ -167,7 +167,7 @@ public class sli_search extends Set{
 	            }
 		
                  for(int i=0; i<=24; i++) {
-
+                  Thread.sleep(2000);
                   WebElement search_btn3 = wait.until(ExpectedConditions.elementToBeClickable(By.id("search-input")));
 		  Thread.sleep(2000);
 		  search_btn3.sendKeys("org chart"); 
