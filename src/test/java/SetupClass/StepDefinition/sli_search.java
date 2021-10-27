@@ -122,7 +122,7 @@ public class sli_search extends Set{
 		  Thread.sleep(2000);
 		  System.out.println("classname  of parent is ----------------------->"+parent_product);
 		  
-		  
+		  Thread.sleep(3000);
 		  WebElement child1_product = wait.until(ExpectedConditions.elementToBeClickable(By.className("sli_ac_image"))); 
 		  Thread.sleep(1000); 
 		  child1_product.click();
